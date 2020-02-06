@@ -37,3 +37,14 @@ ALTER TABLE STUDENT ADD NOCONTACTS VARCHAR(20), dOB DATE
 ALTER TABLE STUDENT DROP COLUMN CONTACTS, sob
 /* CHANGING DATATYPE OF ATTRIBUTE(COLUMN) */
 ALTER TABLE STUDENT ALTER COLUMN dob VARCHAR(20)
+
+
+/* composite keys */
+CREATE TABLE student1(    
+roll char (13) ,    
+cnic char (13) ,    
+student_name varchar (50),     
+student_address varchar (50),
+age int,
+primary keys student(roll, cnic)    
+)
