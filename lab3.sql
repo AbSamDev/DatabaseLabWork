@@ -13,7 +13,8 @@ USE LAB3
 CREATE TABLE student(          
                                /* datatypes: int, char, varchar */
 roll char (13) primary key,    /* primary key is such an attribute use to uniquely identify each rowin a database */
-student_name varchar (50),     /* varchar take dynamic space */
+student_name varchar (50),  /* varchar take dynamic space */
+Father_name varchar (50),
 student_address varchar (50),
 age int                        /* no need of comma on ending attribute of the table*/
 )
@@ -26,6 +27,7 @@ insert into student( roll, student_name, age) values ('143', 'Ahsan', 104)
 insert into student( roll, student_name) values ('144', 'Rana Shaukat') 
 insert into student( roll, student_name) values ('145', 'Barry') 
 insert into student( roll, student_name) values ('147', 'Safder') 
+insert into student( roll, student_name) values ('141', 'Samad') 
 
 
 SELECT * FROM STUDENT
