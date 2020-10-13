@@ -11,6 +11,9 @@
   ;+-------------------------------------------+ 
 */
 
+
+/*considering the database is already created
+create database lab2*/
 /* creating table named student */
 
 CREATE TABLE student(          
@@ -57,5 +60,8 @@ student_roll char(13) foreign key references student(roll)  /* foreign key */
 )
 
 insert into result values ('140', 'OS', 35 , 'B+', '140') 
+
+/*Use Drop database DBname command to drop or delete database compeletely
+Drop database lab2*/   
   
   
